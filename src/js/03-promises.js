@@ -10,7 +10,6 @@ form.addEventListener('submit', event => {
   const stepValue = Number(step.value);
   const amountValue = Number(amount.value);
 
-  // Input validation
   if (delayValue < 0 || stepValue < 0 || amountValue <= 0) {
     Notiflix.Notify.failure(
       'Invalid input values. Please check and try again.'
